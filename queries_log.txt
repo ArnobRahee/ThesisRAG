@@ -1,0 +1,12 @@
+Natural Language:  What is the total transaction amount recorded in the database?
+SQL Query: SELECT SUM(c.amount) AS total_transaction_amount FROM customers c;
+
+Natural Language: How much money was spent by customers from the United States?
+SQL Query: SELECT SUM(c.amount) AS total_spent FROM customers c WHERE c.bank_country = 'United States';
+
+Natural Language: Total no of customers
+SQL Query: SELECT COUNT(*) FROM customers;
+
+Natural Language: How many transactions occurred after January 1st, 2024?
+SQL Query: SELECT COUNT(*) FROM customers WHERE transaction_date > '2024-01-01';
+
