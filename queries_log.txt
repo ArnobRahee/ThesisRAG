@@ -1,27 +1,9 @@
-Natural Language: How many customers are in the database?
-SQL Query: SELECT COUNT(*) FROM customers;
-
-Natural Language: What is the total transaction amount across all customers?
-SQL Query: SELECT SUM(c.amount) AS total_transaction_amount FROM customers c;
-
-Natural Language: How many customers have the currency code 'USD'?
-SQL Query: SELECT COUNT(*) FROM customers WHERE customers.currency_code = 'USD';
-
-Natural Language: What is the average age of customers?
-SQL Query: SELECT AVG(julianday('now') - julianday(c.date_of_birth))/31536000 AS average_age FROM customers c;
-
-Natural Language: What is the number of unique companies customers work for?
-SQL Query: SELECT COUNT(DISTINCT company) FROM customers;
-
-Natural Language: How many customers have transactions after January 1, 2023?
-SQL Query: SELECT COUNT(*) FROM customers WHERE transaction_date > '2023-01-01';
-
-Natural Language: What is the total number of customers who use 'Visa' as their credit card provider?
-SQL Query: SELECT COUNT(*) FROM customers WHERE credit_card_provider = 'Visa';
-
-Natural Language: What is the sum of transaction amounts for customers from Canada?
-SQL Query: SELECT SUM(c.amount) FROM customers c WHERE c.bank_country = 'Canada';
-
-Natural Language: What is the average number of transactions per company?
-SQL Query: SELECT c.company, AVG(c.amount) AS average_amount FROM customers c GROUP BY c.company ORDER BY average_amount DESC NULLS LAST;
-
+Query 1: SELECT COUNT(*) FROM customers;
+Query 2: SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2024%';
+Query 3: SELECT COUNT(*) FROM customers WHERE bank_country = 'US';
+Query 4: SELECT COUNT(*) FROM customers WHERE company = 'Acme Corp';
+Query 5: SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';
+Query 6: SELECT COUNT(*) FROM customers WHERE credit_card_expire LIKE '%/25';
+Query 7: SELECT COUNT(*) FROM customers WHERE job LIKE '%Engineer%';
+Query 8: SELECT COUNT(*) FROM customers WHERE email LIKE '%.edu';
+Query 9: SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2023-03%';
