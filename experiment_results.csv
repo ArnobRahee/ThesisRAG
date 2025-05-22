@@ -1,0 +1,73 @@
+Query,Database,Raw Sample Result,Scaled Result,Execution Time (s),Gold Execution Time (s),Relative Error (%),Speed Overhead (%)
+SELECT COUNT(*) FROM customers;,50mb_sample.db,150413,15402573.224375,0.1995,24.1398,0.00,0.20
+SELECT COUNT(*) FROM customers;,100mb_sample.db,300826,15402573.224375,0.3060,24.1398,0.00,0.31
+SELECT COUNT(*) FROM customers;,150mb_sample.db,451239,15402573.224375,0.4613,24.1398,0.00,0.46
+SELECT COUNT(*) FROM customers;,200mb_sample.db,601653,15402598.824843751,0.6248,24.1398,0.00,0.62
+SELECT COUNT(*) FROM customers;,250mb_sample.db,752066,15402593.70475,0.7752,24.1398,0.00,0.78
+SELECT COUNT(*) FROM customers;,500mb_sample.db,1504133,15402603.9449375,1.5306,24.1398,0.00,1.53
+SELECT COUNT(*) FROM customers;,750mb_sample.db,2256199,15402600.531541664,2.3481,24.1398,0.00,2.35
+SELECT COUNT(*) FROM customers;,1000mb_sample.db,3008266,15402603.9449375,3.0914,24.1398,0.00,3.09
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2024%';,50mb_sample.db,28007,2867969.3131250003,0.1958,31.7702,0.18,0.20
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2024%';,100mb_sample.db,56102,2872474.995625,0.2824,31.7702,0.33,0.28
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2024%';,150mb_sample.db,84204,2874215.8275,0.6372,31.7702,0.40,0.64
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2024%';,200mb_sample.db,112251,2873678.21765625,0.6358,31.7702,0.38,0.64
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2024%';,250mb_sample.db,140386,2875157.92475,0.6558,31.7702,0.43,0.66
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2024%';,500mb_sample.db,280584,2873232.7695,1.5911,31.7702,0.36,1.59
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2024%';,750mb_sample.db,420326,2869478.034083333,2.4629,31.7702,0.23,2.46
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2024%';,1000mb_sample.db,560417,2869387.5790937496,3.2671,31.7702,0.23,3.27
+SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,50mb_sample.db,0,0.0,0.1332,29.7662,,0.13
+SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,100mb_sample.db,0,0.0,0.2947,29.7662,,0.29
+SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,150mb_sample.db,0,0.0,0.6039,29.7662,,0.60
+SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,200mb_sample.db,0,0.0,0.5848,29.7662,,0.58
+SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,250mb_sample.db,0,0.0,0.6165,29.7662,,0.62
+SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,500mb_sample.db,0,0.0,1.5367,29.7662,,1.54
+SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,750mb_sample.db,0,0.0,2.2603,29.7662,,2.26
+SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,1000mb_sample.db,0,0.0,3.0167,29.7662,,3.02
+SELECT COUNT(*) FROM customers WHERE company = 'Acme Corp';,50mb_sample.db,0,0.0,0.1319,29.5323,,0.13
+SELECT COUNT(*) FROM customers WHERE company = 'Acme Corp';,100mb_sample.db,0,0.0,0.2981,29.5323,,0.30
+SELECT COUNT(*) FROM customers WHERE company = 'Acme Corp';,150mb_sample.db,0,0.0,0.6151,29.5323,,0.62
+SELECT COUNT(*) FROM customers WHERE company = 'Acme Corp';,200mb_sample.db,0,0.0,0.5859,29.5323,,0.59
+SELECT COUNT(*) FROM customers WHERE company = 'Acme Corp';,250mb_sample.db,0,0.0,0.6145,29.5323,,0.61
+SELECT COUNT(*) FROM customers WHERE company = 'Acme Corp';,500mb_sample.db,0,0.0,1.5000,29.5323,,1.50
+SELECT COUNT(*) FROM customers WHERE company = 'Acme Corp';,750mb_sample.db,0,0.0,2.2166,29.5323,,2.22
+SELECT COUNT(*) FROM customers WHERE company = 'Acme Corp';,1000mb_sample.db,0,0.0,2.9780,29.5323,,2.98
+SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,50mb_sample.db,887,90830.46312500001,0.1417,30.1926,4.01,0.14
+SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,100mb_sample.db,1841,94260.9259375,0.2832,30.1926,0.38,0.28
+SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,150mb_sample.db,2751,93902.519375,0.6287,30.1926,0.76,0.63
+SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,200mb_sample.db,3682,94260.9259375,0.5968,30.1926,0.38,0.60
+SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,250mb_sample.db,4559,93370.029625,0.6332,30.1926,1.33,0.63
+SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,500mb_sample.db,9228,94496.45025,1.5069,30.1926,0.13,1.51
+SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,750mb_sample.db,13908,94947.01849999999,2.3416,30.1926,0.34,2.34
+SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,1000mb_sample.db,18645,95464.14796875,3.1131,30.1926,0.89,3.11
+SELECT COUNT(*) FROM customers WHERE credit_card_expire LIKE '%/25';,50mb_sample.db,9336,956023.905,0.1516,31.5246,1.02,0.15
+SELECT COUNT(*) FROM customers WHERE credit_card_expire LIKE '%/25';,100mb_sample.db,18572,950903.81125,0.3000,31.5246,0.48,0.30
+SELECT COUNT(*) FROM customers WHERE credit_card_expire LIKE '%/25';,150mb_sample.db,27821,949640.8547916666,0.6305,31.5246,0.35,0.63
+SELECT COUNT(*) FROM customers WHERE credit_card_expire LIKE '%/25';,200mb_sample.db,37119,950263.79953125,0.6016,31.5246,0.41,0.60
+SELECT COUNT(*) FROM customers WHERE credit_card_expire LIKE '%/25';,250mb_sample.db,46349,949244.9008749999,0.6475,31.5246,0.31,0.65
+SELECT COUNT(*) FROM customers WHERE credit_card_expire LIKE '%/25';,500mb_sample.db,92712,949388.2634999999,1.5196,31.5246,0.32,1.52
+SELECT COUNT(*) FROM customers WHERE credit_card_expire LIKE '%/25';,750mb_sample.db,139079,949463.3582083333,2.3094,31.5246,0.33,2.31
+SELECT COUNT(*) FROM customers WHERE credit_card_expire LIKE '%/25';,1000mb_sample.db,184990,947166.1428124999,3.0348,31.5246,0.09,3.03
+SELECT COUNT(*) FROM customers WHERE job LIKE '%Engineer%';,50mb_sample.db,14306,1464961.2237500001,0.1397,31.3442,0.28,0.14
+SELECT COUNT(*) FROM customers WHERE job LIKE '%Engineer%';,100mb_sample.db,28512,1459841.1300000001,0.4205,31.3442,0.62,0.42
+SELECT COUNT(*) FROM customers WHERE job LIKE '%Engineer%';,150mb_sample.db,42627,1455028.241875,0.7579,31.3442,0.95,0.76
+SELECT COUNT(*) FROM customers WHERE job LIKE '%Engineer%';,200mb_sample.db,56891,1456436.2676562502,0.6175,31.3442,0.86,0.62
+SELECT COUNT(*) FROM customers WHERE job LIKE '%Engineer%';,250mb_sample.db,71053,1455192.084875,0.7711,31.3442,0.94,0.77
+SELECT COUNT(*) FROM customers WHERE job LIKE '%Engineer%';,500mb_sample.db,142869,1463005.3479374999,1.6647,31.3442,0.41,1.66
+SELECT COUNT(*) FROM customers WHERE job LIKE '%Engineer%';,750mb_sample.db,214165,1462059.8372916665,2.4731,31.3442,0.47,2.47
+SELECT COUNT(*) FROM customers WHERE job LIKE '%Engineer%';,1000mb_sample.db,285841,1463532.71759375,3.2165,31.3442,0.37,3.22
+SELECT COUNT(*) FROM customers WHERE email LIKE '%.edu';,50mb_sample.db,0,0.0,0.1500,30.8550,,0.15
+SELECT COUNT(*) FROM customers WHERE email LIKE '%.edu';,100mb_sample.db,0,0.0,0.3475,30.8550,,0.35
+SELECT COUNT(*) FROM customers WHERE email LIKE '%.edu';,150mb_sample.db,0,0.0,0.6530,30.8550,,0.65
+SELECT COUNT(*) FROM customers WHERE email LIKE '%.edu';,200mb_sample.db,0,0.0,0.6138,30.8550,,0.61
+SELECT COUNT(*) FROM customers WHERE email LIKE '%.edu';,250mb_sample.db,0,0.0,0.6483,30.8550,,0.65
+SELECT COUNT(*) FROM customers WHERE email LIKE '%.edu';,500mb_sample.db,0,0.0,1.5354,30.8550,,1.54
+SELECT COUNT(*) FROM customers WHERE email LIKE '%.edu';,750mb_sample.db,0,0.0,2.3303,30.8550,,2.33
+SELECT COUNT(*) FROM customers WHERE email LIKE '%.edu';,1000mb_sample.db,0,0.0,3.1530,30.8550,,3.15
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2023-03%';,50mb_sample.db,2327,238289.16312500002,0.1352,29.7616,1.58,0.14
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2023-03%';,100mb_sample.db,4791,245303.6915625,0.2982,29.7616,1.31,0.30
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2023-03%';,150mb_sample.db,7212,246174.10749999998,0.6286,29.7616,1.67,0.63
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2023-03%';,200mb_sample.db,9518,243665.2615625,0.5886,29.7616,0.64,0.59
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2023-03%';,250mb_sample.db,11852,242733.40449999998,0.6533,29.7616,0.25,0.65
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2023-03%';,500mb_sample.db,23564,241299.77824999997,1.5096,29.7616,0.34,1.51
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2023-03%';,750mb_sample.db,35344,241286.12466666664,2.2696,29.7616,0.35,2.27
+SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2023-03%';,1000mb_sample.db,47053,240915.77121875,3.0748,29.7616,0.50,3.07

@@ -1,0 +1,16 @@
+# Ignore all .db files
+*.db
+
+# OR if you only want to ignore large sample DBs (based on names)
+50mb_sample.db
+100mb_sample.db
+150mb_sample.db
+200mb_sample.db
+250mb_sample.db
+500mb_sample.db
+750mb_sample.db
+1000mb_sample.db
+large_database.db
+
+# Optional: ignore SQLite journal files
+*.db-journal
