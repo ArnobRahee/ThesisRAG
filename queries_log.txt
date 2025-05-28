@@ -1,9 +1,9 @@
-Query 1: SELECT COUNT(*) FROM customers;
-Query 2: SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2024%';
-Query 3: SELECT COUNT(*) FROM customers WHERE bank_country = 'US';
-Query 4: SELECT COUNT(*) FROM customers WHERE company = 'Acme Corp';
-Query 5: SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';
-Query 6: SELECT COUNT(*) FROM customers WHERE credit_card_expire LIKE '%/25';
-Query 7: SELECT COUNT(*) FROM customers WHERE job LIKE '%Engineer%';
-Query 8: SELECT COUNT(*) FROM customers WHERE email LIKE '%.edu';
-Query 9: SELECT COUNT(*) FROM customers WHERE transaction_date LIKE '2023-03%';
+Query 1: SELECT COUNT(*) FROM customers WHERE transaction_date BETWEEN '2024-01-01' AND '2024-12-31';
+Query 2: SELECT COUNT(*) FROM customers WHERE date_of_birth BETWEEN '1984-01-01' AND '1999-12-31';
+Query 3: SELECT COUNT(*) FROM customers WHERE amount BETWEEN 1000 AND 5000;
+Query 4: SELECT COUNT(*) FROM customers WHERE credit_card_expire BETWEEN DATE('now') AND DATE('now', '+6 months');
+Query 5: SELECT COUNT(*) FROM customers WHERE phone_number LIKE '9%';
+Query 6: SELECT COUNT(*) FROM customers;
+Query 7: SELECT COUNT(*) FROM customers WHERE job = 'Engineer';
+Query 8: SELECT COUNT(*) FROM customers WHERE bank_country = 'US';
+Query 9: SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';
