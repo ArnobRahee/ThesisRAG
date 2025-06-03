@@ -1,0 +1,5 @@
+Query 1: SELECT AVG(amount) FROM customers WHERE transaction_date BETWEEN '2024-01-01' AND '2024-12-31';
+Query 2: SELECT AVG(amount) FROM customers WHERE date_of_birth BETWEEN '1985-01-01' AND '1995-12-31';
+Query 3: SELECT AVG(amount) FROM customers WHERE amount BETWEEN 1000 AND 5000;
+Query 4: SELECT AVG(amount) FROM customers WHERE credit_card_provider = 'VISA';
+Query 5: SELECT AVG(amount) FROM customers WHERE ssn LIKE '123%';

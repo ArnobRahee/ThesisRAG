@@ -11,6 +11,7 @@
 750mb_sample.db
 1000mb_sample.db
 large_database.db
+New Text Document.txt
 
 # Optional: ignore SQLite journal files
 *.db-journal

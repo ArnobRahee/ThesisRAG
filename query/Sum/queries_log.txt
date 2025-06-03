@@ -1,0 +1,5 @@
+Query 1: SELECT SUM(amount) FROM customers WHERE transaction_date BETWEEN '2023-01-01' AND '2023-12-31';
+Query 2: SELECT SUM(amount) FROM customers WHERE bank_country = 'Canada';
+Query 3: SELECT SUM(amount) FROM customers WHERE amount BETWEEN 500 AND 2000;
+Query 4: SELECT SUM(amount) FROM customers WHERE job LIKE '%Engineer%';
+Query 5: SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';

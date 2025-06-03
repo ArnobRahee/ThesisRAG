@@ -1,73 +1,49 @@
 Query,Database,Relative Error (%),Speed Overhead (%)
-SELECT COUNT(*) FROM customers WHERE transaction_date BETWEEN '2024-01-01' AND '2024-12-31';,50mb_sample.db,0.15,0.30
-SELECT COUNT(*) FROM customers WHERE transaction_date BETWEEN '2024-01-01' AND '2024-12-31';,100mb_sample.db,0.34,0.72
-SELECT COUNT(*) FROM customers WHERE transaction_date BETWEEN '2024-01-01' AND '2024-12-31';,150mb_sample.db,0.40,0.91
-SELECT COUNT(*) FROM customers WHERE transaction_date BETWEEN '2024-01-01' AND '2024-12-31';,200mb_sample.db,0.39,1.12
-SELECT COUNT(*) FROM customers WHERE transaction_date BETWEEN '2024-01-01' AND '2024-12-31';,250mb_sample.db,0.44,1.72
-SELECT COUNT(*) FROM customers WHERE transaction_date BETWEEN '2024-01-01' AND '2024-12-31';,500mb_sample.db,0.37,3.83
-SELECT COUNT(*) FROM customers WHERE transaction_date BETWEEN '2024-01-01' AND '2024-12-31';,750mb_sample.db,0.23,5.92
-SELECT COUNT(*) FROM customers WHERE transaction_date BETWEEN '2024-01-01' AND '2024-12-31';,1000mb_sample.db,0.23,7.75
-SELECT COUNT(*) FROM customers WHERE date_of_birth BETWEEN '1984-01-01' AND '1999-12-31';,50mb_sample.db,0.52,0.29
-SELECT COUNT(*) FROM customers WHERE date_of_birth BETWEEN '1984-01-01' AND '1999-12-31';,100mb_sample.db,0.07,0.65
-SELECT COUNT(*) FROM customers WHERE date_of_birth BETWEEN '1984-01-01' AND '1999-12-31';,150mb_sample.db,0.28,0.82
-SELECT COUNT(*) FROM customers WHERE date_of_birth BETWEEN '1984-01-01' AND '1999-12-31';,200mb_sample.db,0.06,1.15
-SELECT COUNT(*) FROM customers WHERE date_of_birth BETWEEN '1984-01-01' AND '1999-12-31';,250mb_sample.db,0.19,1.78
-SELECT COUNT(*) FROM customers WHERE date_of_birth BETWEEN '1984-01-01' AND '1999-12-31';,500mb_sample.db,0.08,4.83
-SELECT COUNT(*) FROM customers WHERE date_of_birth BETWEEN '1984-01-01' AND '1999-12-31';,750mb_sample.db,0.10,6.57
-SELECT COUNT(*) FROM customers WHERE date_of_birth BETWEEN '1984-01-01' AND '1999-12-31';,1000mb_sample.db,0.13,8.84
-SELECT COUNT(*) FROM customers WHERE amount BETWEEN 1000 AND 5000;,50mb_sample.db,0.10,0.25
-SELECT COUNT(*) FROM customers WHERE amount BETWEEN 1000 AND 5000;,100mb_sample.db,0.00,0.52
-SELECT COUNT(*) FROM customers WHERE amount BETWEEN 1000 AND 5000;,150mb_sample.db,0.02,0.38
-SELECT COUNT(*) FROM customers WHERE amount BETWEEN 1000 AND 5000;,200mb_sample.db,0.04,0.65
-SELECT COUNT(*) FROM customers WHERE amount BETWEEN 1000 AND 5000;,250mb_sample.db,0.02,1.70
-SELECT COUNT(*) FROM customers WHERE amount BETWEEN 1000 AND 5000;,500mb_sample.db,0.02,4.25
-SELECT COUNT(*) FROM customers WHERE amount BETWEEN 1000 AND 5000;,750mb_sample.db,0.01,6.31
-SELECT COUNT(*) FROM customers WHERE amount BETWEEN 1000 AND 5000;,1000mb_sample.db,0.01,8.31
-"SELECT COUNT(*) FROM customers WHERE credit_card_expire BETWEEN DATE('now') AND DATE('now', '+6 months');",50mb_sample.db,,0.35
-"SELECT COUNT(*) FROM customers WHERE credit_card_expire BETWEEN DATE('now') AND DATE('now', '+6 months');",100mb_sample.db,,0.60
-"SELECT COUNT(*) FROM customers WHERE credit_card_expire BETWEEN DATE('now') AND DATE('now', '+6 months');",150mb_sample.db,,0.83
-"SELECT COUNT(*) FROM customers WHERE credit_card_expire BETWEEN DATE('now') AND DATE('now', '+6 months');",200mb_sample.db,,1.19
-"SELECT COUNT(*) FROM customers WHERE credit_card_expire BETWEEN DATE('now') AND DATE('now', '+6 months');",250mb_sample.db,,1.54
-"SELECT COUNT(*) FROM customers WHERE credit_card_expire BETWEEN DATE('now') AND DATE('now', '+6 months');",500mb_sample.db,,3.79
-"SELECT COUNT(*) FROM customers WHERE credit_card_expire BETWEEN DATE('now') AND DATE('now', '+6 months');",750mb_sample.db,,5.68
-"SELECT COUNT(*) FROM customers WHERE credit_card_expire BETWEEN DATE('now') AND DATE('now', '+6 months');",1000mb_sample.db,,7.81
-SELECT COUNT(*) FROM customers WHERE phone_number LIKE '9%';,50mb_sample.db,0.28,0.32
-SELECT COUNT(*) FROM customers WHERE phone_number LIKE '9%';,100mb_sample.db,0.51,0.65
-SELECT COUNT(*) FROM customers WHERE phone_number LIKE '9%';,150mb_sample.db,0.67,0.92
-SELECT COUNT(*) FROM customers WHERE phone_number LIKE '9%';,200mb_sample.db,0.08,1.31
-SELECT COUNT(*) FROM customers WHERE phone_number LIKE '9%';,250mb_sample.db,0.05,1.89
-SELECT COUNT(*) FROM customers WHERE phone_number LIKE '9%';,500mb_sample.db,0.21,4.22
-SELECT COUNT(*) FROM customers WHERE phone_number LIKE '9%';,750mb_sample.db,0.09,6.31
-SELECT COUNT(*) FROM customers WHERE phone_number LIKE '9%';,1000mb_sample.db,0.21,8.16
-SELECT COUNT(*) FROM customers;,50mb_sample.db,0.00,0.39
-SELECT COUNT(*) FROM customers;,100mb_sample.db,0.00,1.35
-SELECT COUNT(*) FROM customers;,150mb_sample.db,0.00,1.77
-SELECT COUNT(*) FROM customers;,200mb_sample.db,0.00,2.53
-SELECT COUNT(*) FROM customers;,250mb_sample.db,0.00,3.00
-SELECT COUNT(*) FROM customers;,500mb_sample.db,0.00,6.47
-SELECT COUNT(*) FROM customers;,750mb_sample.db,0.00,8.42
-SELECT COUNT(*) FROM customers;,1000mb_sample.db,0.00,13.26
-SELECT COUNT(*) FROM customers WHERE job = 'Engineer';,50mb_sample.db,,0.33
-SELECT COUNT(*) FROM customers WHERE job = 'Engineer';,100mb_sample.db,,0.59
-SELECT COUNT(*) FROM customers WHERE job = 'Engineer';,150mb_sample.db,,0.75
-SELECT COUNT(*) FROM customers WHERE job = 'Engineer';,200mb_sample.db,,1.09
-SELECT COUNT(*) FROM customers WHERE job = 'Engineer';,250mb_sample.db,,1.76
-SELECT COUNT(*) FROM customers WHERE job = 'Engineer';,500mb_sample.db,,3.97
-SELECT COUNT(*) FROM customers WHERE job = 'Engineer';,750mb_sample.db,,6.01
-SELECT COUNT(*) FROM customers WHERE job = 'Engineer';,1000mb_sample.db,,8.21
-SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,50mb_sample.db,,0.29
-SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,100mb_sample.db,,0.65
-SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,150mb_sample.db,,0.74
-SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,200mb_sample.db,,1.19
-SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,250mb_sample.db,,1.83
-SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,500mb_sample.db,,4.02
-SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,750mb_sample.db,,6.06
-SELECT COUNT(*) FROM customers WHERE bank_country = 'US';,1000mb_sample.db,,8.08
-SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,50mb_sample.db,4.01,0.17
-SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,100mb_sample.db,0.38,0.27
-SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,150mb_sample.db,0.76,0.37
-SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,200mb_sample.db,0.38,0.49
-SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,250mb_sample.db,1.33,1.38
-SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,500mb_sample.db,0.13,3.65
-SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,750mb_sample.db,0.34,5.47
-SELECT COUNT(*) FROM customers WHERE currency_code = 'USD';,1000mb_sample.db,0.89,7.46
+SELECT SUM(amount) FROM customers WHERE transaction_date BETWEEN '2023-01-01' AND '2023-12-31';,50mb_sample.db,0.23,0.13
+SELECT SUM(amount) FROM customers WHERE transaction_date BETWEEN '2023-01-01' AND '2023-12-31';,100mb_sample.db,0.01,0.22
+SELECT SUM(amount) FROM customers WHERE transaction_date BETWEEN '2023-01-01' AND '2023-12-31';,150mb_sample.db,0.25,0.34
+SELECT SUM(amount) FROM customers WHERE transaction_date BETWEEN '2023-01-01' AND '2023-12-31';,200mb_sample.db,0.34,0.46
+SELECT SUM(amount) FROM customers WHERE transaction_date BETWEEN '2023-01-01' AND '2023-12-31';,250mb_sample.db,0.36,1.10
+SELECT SUM(amount) FROM customers WHERE transaction_date BETWEEN '2023-01-01' AND '2023-12-31';,500mb_sample.db,0.12,2.91
+SELECT SUM(amount) FROM customers WHERE transaction_date BETWEEN '2023-01-01' AND '2023-12-31';,750mb_sample.db,0.13,4.33
+SELECT SUM(amount) FROM customers WHERE transaction_date BETWEEN '2023-01-01' AND '2023-12-31';,1000mb_sample.db,0.13,6.03
+SELECT SUM(amount) FROM customers WHERE bank_country = 'Canada';,50mb_sample.db,11.83,0.13
+SELECT SUM(amount) FROM customers WHERE bank_country = 'Canada';,100mb_sample.db,7.16,0.23
+SELECT SUM(amount) FROM customers WHERE bank_country = 'Canada';,150mb_sample.db,5.85,0.34
+SELECT SUM(amount) FROM customers WHERE bank_country = 'Canada';,200mb_sample.db,5.99,0.46
+SELECT SUM(amount) FROM customers WHERE bank_country = 'Canada';,250mb_sample.db,5.44,1.04
+SELECT SUM(amount) FROM customers WHERE bank_country = 'Canada';,500mb_sample.db,2.96,2.81
+SELECT SUM(amount) FROM customers WHERE bank_country = 'Canada';,750mb_sample.db,1.14,4.39
+SELECT SUM(amount) FROM customers WHERE bank_country = 'Canada';,1000mb_sample.db,1.11,6.11
+SELECT SUM(amount) FROM customers WHERE amount BETWEEN 500 AND 2000;,50mb_sample.db,0.54,0.13
+SELECT SUM(amount) FROM customers WHERE amount BETWEEN 500 AND 2000;,100mb_sample.db,0.23,0.23
+SELECT SUM(amount) FROM customers WHERE amount BETWEEN 500 AND 2000;,150mb_sample.db,0.07,0.33
+SELECT SUM(amount) FROM customers WHERE amount BETWEEN 500 AND 2000;,200mb_sample.db,0.08,0.49
+SELECT SUM(amount) FROM customers WHERE amount BETWEEN 500 AND 2000;,250mb_sample.db,0.04,1.07
+SELECT SUM(amount) FROM customers WHERE amount BETWEEN 500 AND 2000;,500mb_sample.db,0.18,3.09
+SELECT SUM(amount) FROM customers WHERE amount BETWEEN 500 AND 2000;,750mb_sample.db,0.23,4.85
+SELECT SUM(amount) FROM customers WHERE amount BETWEEN 500 AND 2000;,1000mb_sample.db,0.09,6.78
+SELECT SUM(amount) FROM customers WHERE job LIKE '%Engineer%';,50mb_sample.db,0.11,0.14
+SELECT SUM(amount) FROM customers WHERE job LIKE '%Engineer%';,100mb_sample.db,0.32,0.33
+SELECT SUM(amount) FROM customers WHERE job LIKE '%Engineer%';,150mb_sample.db,0.71,0.35
+SELECT SUM(amount) FROM customers WHERE job LIKE '%Engineer%';,200mb_sample.db,0.78,0.60
+SELECT SUM(amount) FROM customers WHERE job LIKE '%Engineer%';,250mb_sample.db,0.71,1.15
+SELECT SUM(amount) FROM customers WHERE job LIKE '%Engineer%';,500mb_sample.db,0.22,3.20
+SELECT SUM(amount) FROM customers WHERE job LIKE '%Engineer%';,750mb_sample.db,0.19,4.73
+SELECT SUM(amount) FROM customers WHERE job LIKE '%Engineer%';,1000mb_sample.db,0.24,6.33
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,50mb_sample.db,16.13,0.12
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,100mb_sample.db,16.85,0.22
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,150mb_sample.db,7.49,0.33
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,200mb_sample.db,5.29,0.46
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,250mb_sample.db,7.12,1.05
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,500mb_sample.db,11.38,2.87
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,750mb_sample.db,3.20,6.18
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,1000mb_sample.db,3.77,8.33
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,50mb_sample.db,16.13,0.17
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,100mb_sample.db,16.85,0.26
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,150mb_sample.db,7.49,0.40
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,200mb_sample.db,5.29,0.55
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,250mb_sample.db,7.12,1.58
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,500mb_sample.db,11.38,3.95
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,750mb_sample.db,3.20,5.85
+SELECT SUM(amount) FROM customers WHERE currency_code = 'EUR'   AND transaction_date BETWEEN '2024-03-01' AND '2024-03-31';,1000mb_sample.db,3.77,7.65

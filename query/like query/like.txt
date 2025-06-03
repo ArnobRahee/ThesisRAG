@@ -1,0 +1,5 @@
+Query 1: SELECT COUNT(*) FROM customers WHERE email LIKE '%@gmail.com';
+Query 2: SELECT COUNT(*) FROM customers WHERE name LIKE 'A%';
+Query 3: SELECT COUNT(*) FROM customers WHERE job LIKE '%Manager%';
+Query 4: SELECT COUNT(*) FROM customers WHERE address LIKE '%Street%';
+Query 5: SELECT COUNT(*) FROM customers WHERE company LIKE 'Tech%';
