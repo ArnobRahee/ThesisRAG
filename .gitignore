@@ -11,6 +11,9 @@
 750mb_sample.db
 1000mb_sample.db
 large_database.db
+tpc-h
+gold_standard_parquet
+tpch-sized-samples
 New Text Document.txt
 
 # Optional: ignore SQLite journal files
